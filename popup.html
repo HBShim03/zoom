@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      width: 400px;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    #controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    #output {
+      white-space: pre-wrap;
+      font-family: monospace;
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <h3>Zoom CSV Grouper</h3>
+  <div id="controls">
+    <input type="file" id="csvFileInput" accept=".csv" />
+    <button id="processBtn">Group by Participant</button>
+  </div>
+  <div id="output">Upload a CSV to see results here...</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
