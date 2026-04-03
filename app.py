@@ -135,7 +135,7 @@ col1, col2 = st.columns([1, 1])
 
 with col1:
     st.subheader("1. 설정 및 업로드")
-    hourly_rate = st.number_input("💸 시급(Hourly Rate)을 입력하세요 (원)", min_value=0, value=20000, step=1000)
+    hourly_rate = st.number_input("💸 시급(Hourly Rate)을 입력하세요 (원)", min_value=0, value=60000, step=1000)
     uploaded_file = st.file_uploader("📁 Zoom CSV 파일 업로드", type=['csv'])
 
 if uploaded_file is not None:
